@@ -38,7 +38,7 @@ public class SwaggerConfig {
 		return new ApiInfo(
 				"Service Search offers by stores",
 				"Service API Description",
-				"0.0.1",
+				"0.0.2",
 				"Copyright © 2024 DM",
 				new Contact("Douglas Martinez", "https://www.linkedin.com/in/douglas-alexander-mart%C3%ADnez-loor-02756515a/", "dougman960@gmail.com"),
 				"LICENSE",
