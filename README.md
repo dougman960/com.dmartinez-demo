@@ -16,7 +16,7 @@
 | **Capa de servicio**           | 	Lógica empresarial encapsulada en clases de servicio para mantener la separación de preocupaciones y mejorar la modularidad.                               |
 | **MVC Arquitectura**           |Implementación del patrón arquitectónico Modelo-Vista-Controlador para organizar y gestionar los componentes de la aplicación.                               |
 | **Manejo de excepciones**      | Manejo de excepciones personalizado para gestionar errores de forma elegante y proporcionar respuestas significativas a los clientes.                       |
-| **Interacción con la BD**      | Interacción con la base de datos MySQL utilizando Hibernate como implementación de JPA, garantizando el almacenamiento y recuperación eficiente de datos.   |
+| **Interacción con la BD**      | Interacción con la base de datos H2 utilizando Hibernate como implementación de JPA, garantizando el almacenamiento y recuperación eficiente de datos.      |
 
 ## ✔️ tecnologías-utilizadas
 - Java 8
@@ -30,6 +30,15 @@
 
 -  servicio para consultar ofertas
 
+## <a name="available-endpoints"></a> 📎 Available Endpoints:
+
+- Bellow is a table representing the endpoints available in this demo application after it has been launched:
+
+| Endpoint                                                                     | HTTP Method | Descripcion                                            |
+|------------------------------------------------------------------------------|-------------|--------------------------------------------------------|
+| /service/proof?date=2020-06-15T10:00:00&productId=35455&shop=1               | GET         | Consulta de ofertas activas                            |
+
+
 ## 🛠️ URLS DE ACCESOS
 - Swagger : http://localhost:6025/swagger-ui.html
 - Base de datos :
@@ -37,3 +46,23 @@
                  - jdbc: jdbc:h2:mem:testdb
                  - usuario: sa
                  - password: password
+
+  ## <a name="mvc"></a> 📎 MVC (Modelo-Vista-Controlador) Pattern:
+
+<p align="center">
+<img src="public-doc/mvc.png">
+</p>
+
+### Overview:
+
+- La arquitectura de este servicio sigue el patrón de diseño MVC, separando la aplicación en tres componentes principales: Modelo, Vista y Controlador.
+
+    - El modelo representa los datos y la lógica del negocio.
+    - La vista maneja la capa de presentación.
+    - El controlador administra la entrada del usuario y coordina las interacciones entre el modelo y las vistas.
+
+## <a name="data-flow"></a> 📎 Data flow:
+
+<p align="center">
+<img src="public-doc/data_flow.jpg" align="center">
+</p>
