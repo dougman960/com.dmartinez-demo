@@ -46,14 +46,7 @@
                  - jdbc: jdbc:h2:mem:testdb
                  - usuario: sa
                  - password: password
-
-  ## <a name="mvc"></a> 📎 MVC (Modelo-Vista-Controlador) Pattern:
-
-<p align="center">
-<img src="public-doc/mvc.png">
-</p>
-
-### Overview:
+## <a name="mvc"></a> 📎 MVC (Modelo-Vista-Controlador) Pattern:
 
 - La arquitectura de este servicio sigue el patrón de diseño MVC, separando la aplicación en tres componentes principales: Modelo, Vista y Controlador.
 
@@ -61,8 +54,3 @@
     - La vista maneja la capa de presentación.
     - El controlador administra la entrada del usuario y coordina las interacciones entre el modelo y las vistas.
 
-## <a name="data-flow"></a> 📎 Data flow:
-
-<p align="center">
-<img src="public-doc/data_flow.jpg" align="center">
-</p>
