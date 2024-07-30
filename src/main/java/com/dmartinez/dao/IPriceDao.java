@@ -17,12 +17,7 @@ public interface IPriceDao extends JpaRepository<Prices,String> {
             "             WHERE " +
             "             P.BRAND_ID = :brandId  and " +
             "             P.PRODUCT_ID = :productId and " +
-            "            ( :date BETWEEN P.staRT_DATE   AND P.end_DATE )  and" +
-            "            P.PRIORITY  =  (SELECT max(C.PRIORITY)" +
-            "             FROM Prices C" +
-            "             WHERE " +
-            "             C.BRAND_ID = :brandId and " +
-            "             C.PRODUCT_ID = :productId and " +
-            "            ( :date BETWEEN C.staRT_DATE   AND C.end_DATE ));",nativeQuery = true)
+            "            ( :date BETWEEN P.staRT_DATE   AND P.end_DATE ) " +
+            "            ORDER BY P.priority DESC FETCH FIRST 1 ROWS ONLY",nativeQuery = true)
     Prices findByBrandidAndProductidAndAndDate(@Param("brandId") String brandId, @Param("productId") String productId, @Param("date") LocalDateTime date);
 }
