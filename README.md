@@ -30,9 +30,9 @@
 
 -  servicio para consultar ofertas
 
-## <a name="available-endpoints"></a> 📎 Available Endpoints:
+## <a name="endpoint"></a> 📎 Puntos finales disponibles:
 
-- Bellow is a table representing the endpoints available in this demo application after it has been launched:
+- A continuación se muestra una tabla que representa los puntos finales disponibles en esta aplicación de demostración después de su lanzamiento:
 
 | Endpoint                                                                     | HTTP Method | Descripcion                                            |
 |------------------------------------------------------------------------------|-------------|--------------------------------------------------------|
