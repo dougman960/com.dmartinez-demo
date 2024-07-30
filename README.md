@@ -13,7 +13,7 @@
 | **Estructura del proyecto**    | Estructura del proyecto organizada siguiendo las mejores prácticas y convenciones para mejorar la legibilidad y facilidad de mantenimiento del código.      |
 | **DTOs**                       | Uso de DTO para encapsular datos                                                                                                                            |
 | **Capa de repositorio**        | Lógica de acceso a datos administrada por repositorios JPA, aprovechando Spring Data JPA para interacciones fluidas con bases de datos.                     |
-| **Capa de servicio**           | 	Lógica empresarial encapsulada en clases de servicio para mantener la separación de preocupaciones y mejorar la modularidad.                               |
+| **Capa de servicio**           | 	Lógica encapsulada en clases de servicio para mantener la separación de preocupaciones y mejorar la modularidad.                                           |
 | **MVC Arquitectura**           |Implementación del patrón arquitectónico Modelo-Vista-Controlador para organizar y gestionar los componentes de la aplicación.                               |
 | **Manejo de excepciones**      | Manejo de excepciones personalizado para gestionar errores de forma elegante y proporcionar respuestas significativas a los clientes.                       |
 | **Interacción con la BD**      | Interacción con la base de datos H2 utilizando Hibernate como implementación de JPA, garantizando el almacenamiento y recuperación eficiente de datos.      |
@@ -46,7 +46,7 @@
                  - jdbc: jdbc:h2:mem:testdb
                  - usuario: sa
                  - password: password
-## <a name="mvc"></a> 📎 MVC (Modelo-Vista-Controlador) Pattern:
+## <a name="mvc"></a> 📎 MVC (Modelo-Vista-Controlador):
 
 - La arquitectura de este servicio sigue el patrón de diseño MVC, separando la aplicación en tres componentes principales: Modelo, Vista y Controlador.
 
