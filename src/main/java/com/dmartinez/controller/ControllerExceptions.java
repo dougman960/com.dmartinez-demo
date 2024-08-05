@@ -13,10 +13,8 @@ public class ControllerExceptions {
 
     @ExceptionHandler(value = BusinessException.class)
     public ResponseEntity<BasicResponseDTO> exception(BusinessException ex) {
-
         BasicResponseDTO basicResponseDto = new BasicResponseDTO();
         basicResponseDto.setResponse(ex.getMessage().trim());
-
         return new ResponseEntity<>(basicResponseDto, ex.getStatus());
     }
 

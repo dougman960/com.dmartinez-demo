@@ -3,8 +3,8 @@ package com.dmartinez.service.impl;
 import com.dmartinez.Datos;
 import com.dmartinez.dao.IPriceDao;
 import com.dmartinez.models.dto.PricesDTO;
-import com.dmartinez.models.entity.Prices;
 import com.dmartinez.service.IPriceService;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

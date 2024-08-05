@@ -44,12 +44,9 @@ public class Controller {
     public ResponseEntity<PricesDTO> findOffers (@RequestParam(name = "date", required = true) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime date,
                                                  @RequestParam(name = "productId", required = true) String productId,
                                                  @RequestParam(name = "shop", required = true) String shop){
-
-        PricesDTO pricesDTO = null;
-
+        PricesDTO pricesDTO;
         try{
             pricesDTO = priceServiceImpl.findByBrandidAndProductidAndAndDate(shop,productId,date);
-
         }catch (DataAccessException e){
             logger.error(e.getMessage() + (": ") + (e.getMostSpecificCause().getMessage()));
             throw new BusinessException(HttpStatus.INTERNAL_SERVER_ERROR, "Error when making requests to the database");
@@ -58,7 +55,6 @@ public class Controller {
             throw new BusinessException(HttpStatus.NOT_FOUND, ex.getMessage());
         }
         return  new ResponseEntity<>(pricesDTO, HttpStatus.OK);
-
     }
 
 }

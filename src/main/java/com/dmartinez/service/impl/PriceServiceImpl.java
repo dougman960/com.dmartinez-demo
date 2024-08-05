@@ -33,6 +33,6 @@ public class PriceServiceImpl implements IPriceService {
             throw new BasixException("No active offers found");
         }
 
-        return new PricesDTO(prices.getProduct_id(),prices.getBrandid(),prices.getPrice(),prices.getStartdate(),prices.getEnddate(),prices.getPrice());
+        return new PricesDTO(prices.getProductId(),prices.getBrandId(),prices.getPrice(),prices.getStartDate(),prices.getEndDate(),prices.getPrice());
     }
 }

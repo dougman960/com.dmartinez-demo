@@ -11,40 +11,36 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Table(name="prices")
-@IdClass(Prices_PK.class)
+@IdClass(PricesPk.class)
 public class Prices implements Serializable {
-
 
     @Id
     @Column(name="brand_id")
-    private String brandid;
-
+    private String brandId;
     @Column(name="start_date")
-    private LocalDateTime startdate;
-
+    private LocalDateTime startDate;
     @Column(name="end_date")
-    private LocalDateTime enddate;
-
+    private LocalDateTime endDate;
     @Id
-    private String price_list;
-
+    @Column(name="price_list")
+    private String priceList;
     @Id
-    private String product_id;
+    @Column(name="product_id")
+    private String productId;
     private Integer priority;
     private BigDecimal price;
-
     @Enumerated(EnumType.STRING)
     private Currency curr;
 
     public Prices() {
     }
 
-    public Prices(String brandid, LocalDateTime startdate, LocalDateTime enddate, String price_list, String product_id, Integer priority, BigDecimal price, Currency curr) {
-        this.brandid = brandid;
-        this.startdate = startdate;
-        this.enddate = enddate;
-        this.price_list = price_list;
-        this.product_id = product_id;
+    public Prices(String brandId, LocalDateTime startDate, LocalDateTime endDate, String priceList, String productId, Integer priority, BigDecimal price, Currency curr) {
+        this.brandId = brandId;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.priceList = priceList;
+        this.productId = productId;
         this.priority = priority;
         this.price = price;
         this.curr = curr;

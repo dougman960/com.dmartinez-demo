@@ -12,7 +12,7 @@ public class PricesDTO implements Serializable {
 
 
     private String productId;
-    private String BrandId;
+    private String brandId;
     private BigDecimal price;
 
     @DateTimeFormat(iso =  DateTimeFormat.ISO.DATE_TIME)
@@ -29,7 +29,7 @@ public class PricesDTO implements Serializable {
 
     public PricesDTO(String productId, String brandId, BigDecimal price, LocalDateTime startDate, LocalDateTime endDate, BigDecimal priceFinal) {
         this.productId = productId;
-        BrandId = brandId;
+        this.brandId = brandId;
         this.price = price;
         this.startDate = startDate;
         this.endDate = endDate;
