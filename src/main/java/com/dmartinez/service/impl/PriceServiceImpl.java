@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
 @Service
 public class PriceServiceImpl implements IPriceService {
 
-
     private final IPriceDao iPriceDao;
 
     @Autowired
