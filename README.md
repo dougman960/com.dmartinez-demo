@@ -49,11 +49,10 @@
 ## <a name="mvc"></a> 📎 MVC (Modelo-Vista-Controlador):
 
 - La arquitectura de este servicio sigue el patrón de diseño MVC, separando la aplicación en tres componentes principales: Modelo, Vista y Controlador.
-# Performance consulta
-- Para este caso se propone una consulta nativa por los siguientes motivos
-  La consulta de la base de datos se limita a obtener solo el número requerido de filas, lo que reduce la transferencia de datos y el uso de memoria , ya que se desea que se ejecute del lado del motor de BD y no del servicio.  
-
     - El modelo representa los datos y la lógica del negocio.
     - La vista maneja la capa de presentación.
     - El controlador administra la entrada del usuario y coordina las interacciones entre el modelo y las vistas.
+# Performance consulta
+- Para este caso se propone una consulta nativa por los siguientes motivos
+   - La consulta de la base de datos se limita a obtener solo el número requerido de filas, lo que reduce la transferencia de datos y el uso de memoria , ya que se desea que se ejecute del lado del motor de BD y no del servicio.  
 
