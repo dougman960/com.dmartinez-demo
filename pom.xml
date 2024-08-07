@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.dmartinez</groupId>
 	<artifactId>com.dmartinez-demo</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<name>com.dmartinez-demo</name>
 	<description>prueba tecnica</description>
 	<url/>
