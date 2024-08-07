@@ -22,6 +22,7 @@ class ControllerWebTestClient {
     @Autowired
     private WebTestClient client;
 
+
     @Test
     void testFindOffersEx1(){
         client.get().uri("/service/proof?date=2020-06-14T10:00:00&productId=35455&shop=1").exchange()
@@ -103,5 +104,6 @@ class ControllerWebTestClient {
                     assertEquals("No active offers found", basicResponseDTO.getResponse());
                 });
     }
+
 
 }

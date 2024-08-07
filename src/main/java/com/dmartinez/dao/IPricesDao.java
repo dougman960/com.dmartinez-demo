@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.time.LocalDateTime;
 
-public interface IPriceDao extends JpaRepository<Prices,String> {
+public interface IPricesDao extends JpaRepository<Prices,String> {
 
 
     @Query(value="SELECT P.*" +
@@ -17,5 +17,5 @@ public interface IPriceDao extends JpaRepository<Prices,String> {
             "             P.PRODUCT_ID = :productId and " +
             "            ( :date BETWEEN P.staRT_DATE   AND P.end_DATE ) " +
             "            ORDER BY P.priority DESC FETCH FIRST 1 ROWS ONLY",nativeQuery = true)
-    Prices findByBrandidAndProductidAndAndDate(@Param("brandId") String brandId, @Param("productId") String productId, @Param("date") LocalDateTime date);
+    Prices findByBrandIdAndProductIdAndDate(@Param("brandId") String brandId, @Param("productId") String productId, @Param("date") LocalDateTime date);
 }
